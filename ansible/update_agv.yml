@@ -1,0 +1,8 @@
+- name: Simulate AGV code update
+  hosts: agvs
+  tasks:
+     - name: Print AGV Update Message
+       shell: echo "AGV1 recieved the update at 10-07-25" >> /tmp/agv1_update.log
+     - name: Print AGV Update Message 
+       shell: echo "AGV2 recieved the update at 10-07-25" >> /tmp/agv2_update.log
+
